@@ -9,8 +9,8 @@
     - Polimorfismo
 
 2. ¿Qué aplicaciones irían de acorde al tema asignado para observar los pilares mencionados anteriormente?
-    - Clase abstracta: Un vehículo no puede existir sin ser una más específica de vehículo (un auto, una bici...). Acá aplicamos abstracción y herencia.
-    - Interfaces: Tenía ganas de usar interfaces para algo. Aplicamos polimorfismo entre los vehículos que pueden tocar bocina, no todos hacen el mismo ruido.
-    - Getters, setters y modificadores de acceso: Encapsulamiento, un auto puede modificar su propio color pero solo puede ver el color de otros autos.
+    - Clase abstracta: Un vehículo no puede existir sin ser un tipo más específico de un vehículo (un auto, una bici...). Acá aplicamos abstracción y herencia.
+    - Interfaces: Aplicamos polimorfismo entre los vehículos que pueden encenderse y apagarse, no todos lo hacen iguales.
+    - Getters, setters y modificadores de acceso: Aplicamos encapsulamiento,EJ. las propiedades de un carro no están visibles para los demás, solo para si mismo.
 
 3. Implementar un ejemplo justificando la respuesta a los enunciados anteriores.
