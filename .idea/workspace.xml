@@ -5,24 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a6330dc-d053-4a19-9333-2a3f4053afa8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/factory/BicycleFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/factory/CarFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/factory/MotorcycleFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/factory/base/VehicleFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/vehicles/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ (2).gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Bicycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/vehicles/Bicycle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/vehicles/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Motorcycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/vehicles/Motorcycle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Vehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +48,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "NatGutierrez"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/NatGutierrez/vehicles.git",
+    "accountId": "4f01f9d3-bff1-46f6-befb-5561529aa5c9"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2pqVGEjj2zLWBzkmvNeQHENhDIF" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -77,6 +74,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.Main.executor&quot;: &quot;Coverage&quot;,
+    &quot;Application.app.Main.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Build vehicles.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.vehicles [:app.Main.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.vehicles [:org.example.Main.main()].executor&quot;: &quot;Run&quot;,
@@ -90,19 +88,19 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RunManager">
-    <configuration name="app.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.Main" />
       <module name="VehicleSystem.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="app.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,17 +121,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.app.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

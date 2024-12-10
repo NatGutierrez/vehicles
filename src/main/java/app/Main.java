@@ -8,24 +8,47 @@ import entities.vehicles.Bicycle;
 import entities.vehicles.Car;
 import entities.vehicles.Motorcycle;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Main {
+    enum FactoryType { CAR, BICYCLE, MOTORCYCLE }
+
     public static void main(String[] args) {
 
-        VehicleFactory bicycleFactory = new BicycleFactory();
-        VehicleFactory motorcycleFactory = new MotorcycleFactory();
-        VehicleFactory carFactory = new CarFactory();
+        Map<FactoryType, VehicleFactory> vehicleFactories = createFactories();
 
-        Bicycle bicycle = (Bicycle) bicycleFactory.createVehicle();
-        Motorcycle motorcycle = (Motorcycle) motorcycleFactory.createVehicle();
-        Car car = (Car) carFactory.createVehicle();
+        Bicycle bicycle = (Bicycle) vehicleFactories.get(FactoryType.BICYCLE).createVehicle();
+        Motorcycle motorcycle = (Motorcycle) vehicleFactories.get(FactoryType.MOTORCYCLE).createVehicle();
+        Car car = (Car) vehicleFactories.get(FactoryType.CAR).createVehicle();
 
+        doBicycleStuff(bicycle);
+
+        doMotorcycleStuff(motorcycle);
+
+        doCarStuff(car);
+
+    }
+
+    static Map<FactoryType, VehicleFactory> createFactories() {
+        Map<FactoryType, VehicleFactory> factories = new HashMap<>();
+        factories.put(FactoryType.BICYCLE, new BicycleFactory());
+        factories.put(FactoryType.MOTORCYCLE, new MotorcycleFactory());
+        factories.put(FactoryType.CAR, new CarFactory());
+
+        return factories;
+    }
+
+    static void doBicycleStuff(Bicycle bicycle) {
         System.out.println();
         bicycle.setTrainingWheels(false);
         System.out.println(bicycle);
         bicycle.goForward();
         bicycle.brake();
         bicycle.goBackward();
+    }
 
+    static void doMotorcycleStuff(Motorcycle motorcycle) {
         System.out.println();
         motorcycle.setGearNumber(5);
         motorcycle.setCylinderCapacity(125);
@@ -35,7 +58,9 @@ public class Main {
         motorcycle.brake();
         motorcycle.goBackward();
         motorcycle.turnOff();
+    }
 
+    static void doCarStuff(Car car) {
         System.out.println();
         car.setGearNumber(6);
         car.setMotor(Car.MotorType.DIESEL);
@@ -45,6 +70,5 @@ public class Main {
         car.brake();
         car.goBackward();
         car.turnOff();
-
     }
 }
