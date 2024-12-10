@@ -20,6 +20,8 @@
 
 ## Factory Method
 
+![img.png](img.png)
+
 1. ¿Por qué es importante aplicar ese principio en el desarrollo de software?
    - YAGNI: Se eliminaron atributos y métodos que no eran necesarios para nuestro ejemplo (color, velocidad máxima, getters y setters, etc).
    - KISS: Se evitó complejizar el sistema, manteniendo la funcionalidad.
