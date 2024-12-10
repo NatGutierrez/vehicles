@@ -1,15 +1,19 @@
-package entities;
+package entities.vehicles;
 
 import services.MotorcycleService;
 import services.MotorcycleServiceImp;
 
-public class Motorcycle extends Vehicle {
+public class Motorcycle implements Vehicle {
     private Integer gearNumber;
     private Integer cylinderCapacity;
     private final MotorcycleService motorcycleService;
 
-    public Motorcycle(Integer gearNumber, Integer cylinderCapacity) {
+    public Motorcycle(){
         this.motorcycleService = new MotorcycleServiceImp();
+    }
+
+    public Motorcycle(Integer gearNumber, Integer cylinderCapacity) {
+        this();
         this.gearNumber = gearNumber;
         this.cylinderCapacity = cylinderCapacity;
     }
@@ -48,5 +52,13 @@ public class Motorcycle extends Vehicle {
 
     public void setCylinderCapacity(Integer cylinderCapacity) {
         this.cylinderCapacity = cylinderCapacity;
+    }
+
+    @Override
+    public String toString() {
+        return "Motorcycle{" +
+                "gearNumber=" + gearNumber +
+                ", cylinderCapacity=" + cylinderCapacity +
+                '}';
     }
 }

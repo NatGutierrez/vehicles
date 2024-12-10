@@ -1,18 +1,22 @@
-package entities;
+package entities.vehicles;
 
 import services.CarService;
 import services.CarServiceImp;
 
-public class Car extends Vehicle {
+public class Car implements Vehicle {
     public enum MotorType { GAS, DIESEL, ELECTRIC }
     private MotorType motor;
     private Integer gearNumber;
     private final CarService carService;
 
+    public Car(){
+        this.carService = new CarServiceImp();
+    }
+
     public Car(MotorType motor, Integer gearNumber) {
+        this();
         this.motor = motor;
         this.gearNumber = gearNumber;
-        this.carService = new CarServiceImp();
     }
 
     public void start(){
@@ -49,5 +53,13 @@ public class Car extends Vehicle {
 
     public void setGearNumber(Integer gearNumber) {
         this.gearNumber = gearNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "motor=" + motor +
+                ", gearNumber=" + gearNumber +
+                '}';
     }
 }

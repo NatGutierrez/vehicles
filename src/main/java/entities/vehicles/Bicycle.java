@@ -1,8 +1,11 @@
-package entities;
+package entities.vehicles;
 
-public class Bicycle extends Vehicle {
+public class Bicycle implements Vehicle {
 
     private Boolean trainingWheels;
+
+    public Bicycle() {
+    }
 
     public Bicycle(Boolean trainingWheels) {
         this.trainingWheels = trainingWheels;
@@ -26,5 +29,12 @@ public class Bicycle extends Vehicle {
 
     public void setTrainingWheels(Boolean trainingWheels) {
         this.trainingWheels = trainingWheels;
+    }
+
+    @Override
+    public String toString() {
+        return "Bicycle{" +
+                "trainingWheels=" + trainingWheels +
+                '}';
     }
 }
